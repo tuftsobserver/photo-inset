@@ -90,10 +90,10 @@ a:hover {
 
 .bounded-width > div {
   width: 50%;
+  padding: 5%;
 }
 
 img {
-  padding: 10%;
   max-width: 100%;
   height: auto;
 }

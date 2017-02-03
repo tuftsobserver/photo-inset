@@ -1,10 +1,7 @@
-// zippy scroll to each section
-$.scrollify({
-    section: ".scroll"
-});
-
-if ($(window).width() / $(window).height() <= 3/2) {
-    $.scrollify.disable();
+if ($(window).width() / $(window).height() > 3/2) {
+    $.scrollify({
+        section: ".scroll"
+    });
 }
 
 $(window).resize(function() {
@@ -13,9 +10,7 @@ $(window).resize(function() {
     } else {
         $.scrollify.disable();
     }
-
     reposition_artist_statement();
-
 });
 
 window.onscroll = function() {reposition_artist_statement()};
