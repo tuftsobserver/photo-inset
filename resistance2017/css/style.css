@@ -70,8 +70,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*background-color: red;*/
+  color: #a66056;
 
 }
 
@@ -79,9 +78,7 @@ a:hover {
   width: 75%;
 
   text-align: center;
-  /*font-size: max(2vh);*/
-  font-size: 2vh;
-  /*background-color: white;s*/
+  font-size: 2vmin;
 }
 
 .vertically-center {
