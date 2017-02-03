@@ -21,7 +21,7 @@ h1 {
 h2,
 .back-to-observer {
   font-weight: 900;
- 
+
   font-size: 1.5rem;
   text-align: center;
 }
@@ -36,33 +36,25 @@ a:hover {
 }
 
 .landing-page{
-  position: relative;
-  z-index: 100;
   height: 100vh;
   background-size: cover;
-  /*background: blue;*/
   background-image:url("../img/0.JPG");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .parting-page {
-  position: relative;
-  z-index: 100;
   height: 100vh;
   background-size: cover;
-  /*background: blue;*/
   background-image:url("../img/4.JPG");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
 }
 
 
 .artist-statement {
-  z-index: 0;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 100vh;
   right: 0;
   width: 34vw;
   height: 100vh;
@@ -72,13 +64,12 @@ a:hover {
   justify-content: center;
   color: #a66056;
 
+  text-align: center;
+  font-size: calc(8px + .5vw);
 }
 
 .artist-statement > p {
   width: 75%;
-
-  text-align: center;
-  font-size: 2vmin;
 }
 
 .vertically-center {
@@ -87,10 +78,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*
-.gallery {
-  height: 100vh;
-}*/
 
 .bounded-width {
   width: 66vw;
@@ -104,7 +91,6 @@ a:hover {
   width: 50%;
 }
 
-
 img {
   padding: 10%;
   max-width: 100%;
@@ -117,6 +103,21 @@ ul {
   color: white;
 }
 
+@media (max-aspect-ratio: 3/2) {
+  .bounded-width > div {
+    width: 100%;
+  }
 
+  .bounded-width {
+    width: 100%;
+    height: auto;
+  }
 
-
+  .artist-statement {
+    position: static;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    font-size: 14px;
+  }
+}
