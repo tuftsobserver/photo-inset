@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 15vmin;
+  text-align: center;
+}
+
+h2,
+.pullquote,
+.back-to-observer {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pullquote {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: solid .5rem;
+  border-bottom: solid .5rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.landing-page {
+  height: 100vh;
+  background-color: #EBEBEB;
+  text-align: center;
+}
+
+.interactive-container {
+  height: 100vh;
+}
+
+article, footer {
+  background-color: #EBEBEB;
+}
+
+article p {
+  text-indent: 2rem;
+  line-height: 1.5;
+}
+
+footer {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.vertically-center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bounded-width {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
