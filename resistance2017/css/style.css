@@ -19,20 +19,12 @@ h1 {
 }
 
 h2,
-.pullquote,
 .back-to-observer {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
   font-size: 1.5rem;
   text-align: center;
-}
-
-.pullquote {
-  margin: 2rem 0;
-  padding: 1rem 0;
-  border-top: solid .5rem;
-  border-bottom: solid .5rem;
 }
 
 a {
@@ -44,32 +36,35 @@ a:hover {
   text-decoration: underline;
 }
 
-.landing-page {
+.landing-page, .parting-page {
+  position: relative;
+  z-index: 100;
   height: 100vh;
   background-color: #EBEBEB;
   text-align: center;
 }
 
-.interactive-container {
+.artist-statement {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 34vw;
   height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*background-color: red;*/
+
 }
 
-article, footer {
-  background-color: #EBEBEB;
-}
+.artist-statement > p {
+  width: 75%;
 
-article p {
-  text-indent: 2rem;
-  line-height: 1.5;
-}
-
-footer {
-  font-size: 0.75rem;
   text-align: center;
-}
-
-footer ul {
-  list-style-type: none;
+  /*background-color: white;s*/
 }
 
 .vertically-center {
@@ -78,10 +73,25 @@ footer ul {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*
+.gallery {
+  height: 100vh;
+}*/
 
 .bounded-width {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem;
+  width: 66vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bounded-width > div {
+  width: 50%;
+}
+
+img {
+  padding: 10%;
+  max-width: 100%;
+  height: auto;
 }
