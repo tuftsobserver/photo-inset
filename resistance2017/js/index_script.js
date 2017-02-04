@@ -1,9 +1,12 @@
+// Only enable scrollify if screen has sufficient landscape width
+// Otherwise page scrolling gets messed up when going from 2x2 to single column
 if ($(window).width() / $(window).height() > 3/2) {
     $.scrollify({
         section: ".scroll"
     });
 }
 
+// Handle scrollify changes based on screen dimensions
 $(window).resize(function() {
     if ($(window).width() / $(window).height() > 3/2) {
         $.scrollify.enable();
@@ -15,6 +18,7 @@ $(window).resize(function() {
 
 window.onscroll = function() {reposition_artist_statement()};
 
+// Artist statement is fixed during gallery scrolling but disappears otherwise
 function reposition_artist_statement() {
     if ($(window).width() / $(window).height() > 3/2) {
         if (document.body.scrollTop < $('#gallery1').position().top) {
