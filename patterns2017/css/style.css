@@ -58,7 +58,7 @@ body {
 
 .artist-statement {
 	max-width: 700px;
-	padding: 100px 12px;
+	padding: 100px 12px 30px;
 	margin: 0 auto;
 }
 
@@ -104,3 +104,13 @@ a:hover {
   color: inherit;
   text-decoration: underline;
 }
+
+.faces {
+	margin: 0 auto;
+	position: relative;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+}
+
+
