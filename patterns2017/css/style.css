@@ -1,99 +1,24 @@
-.gallery_container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	width: 85%;
-	margin: 0 auto;
-	justify-content: center;
-
-}
-
-img {
-	width: 22vw;
-	height: auto;
-	box-sizing: border-box;
-	padding: 1vw;
-}
-
-
-.horizontal {
-	width: 32vw;
-}
-
-.square {
-	width: 28vw;
-}
-
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: #ffffff;
-	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dfdfdf' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'La Belle Aurore', cursive;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dfdfdf' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-
-/*.yellow-swatch {
-	height: 30vw;
-	width: 100%;
-	background-color: yellow;
-	position: absolute;
-	top: 250px;
-	z-index: -2;
-}
-
-.blue-swatch {
-	height: 30vw;
-	width: 100%;
-	background-color: #25a3dd;
-	position: absolute;
-	top: 2300px;
-	z-index: -2;
-}*/
-
-
-
-.leaves {
-	width: 15vw;
-}
-
-.artist-statement {
-	max-width: 700px;
-	padding: 100px 12px 30px;
-	margin: 0 auto;
-}
-
 
 h1 {
-	text-align: center;
-	font-size: 70px;
-	font-family: 'La Belle Aurore', cursive;
-
+  font-size: 70px;
+  text-align: center;
 }
 
 h2 {
-	font-size: 50px;
-	font-family: 'La Belle Aurore', cursive;
-
-	text-align: right;
+  font-size: 50px;
+  text-align: right;
 }
 
 p {
-	font-family: 'La Belle Aurore', cursive;
-	font-size: 24px;
-}
-
-.back-to-observer {
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.credits {
-	font-family: 'La Belle Aurore', cursive;
-  font-size: 20px;
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  margin-bottom: 100px;
+  font-size: 24px;
 }
 
 a {
@@ -105,12 +30,57 @@ a:hover {
   text-decoration: underline;
 }
 
-.faces {
-	margin: 0 auto;
-	position: relative;
-	left: 50%;
-	width: 300px;
-	margin-left: -150px;
+.gallery-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Must specify img child of gallery-container, otherwise messes up lightbox */
+.gallery-container img {
+  width: 22vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1vw;
+}
 
+img.horizontal {
+  width: 32vw;
+}
+
+img.square {
+  width: 28vw;
+}
+
+img.leaves {
+  width: 15vw;
+}
+
+img.faces {
+  width: 300px;
+  position: relative;
+  left: 50%;
+  margin: 0 auto 0 -150px;
+}
+
+.artist-statement {
+  max-width: 700px;
+  padding: 100px 12px 30px;
+  margin: 0 auto;
+}
+
+.credits {
+  padding: 0;
+  margin-bottom: 100px;
+  font-size: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.back-to-observer {
+  font-size: 1.5em;
+  text-align: center;
+}
