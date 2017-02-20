@@ -59,11 +59,19 @@ img.leaves {
   width: 15vw;
 }
 
-img.faces {
+img.faces,
+img.tea {
   width: 300px;
   position: relative;
   left: 50%;
   margin: 0 auto 0 -150px;
+}
+
+img.milk-honey {
+  width: 150px;
+  position: relative;
+  left: 50%;
+  margin: 0 auto 50px -75px;
 }
 
 .artist-statement {
