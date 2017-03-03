@@ -89,10 +89,11 @@ img {
 .gallery {
   width: 95vw;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-image {
-  display: inline-flex;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -100,21 +101,27 @@ button {
   background-color: white;
   border: none;
   vertical-align: middle;
-  display: inline-flex;
+  display: inline;
   align-items: center;
   font-size: 40px;
   opacity: 0.3;
-  position: relative;
+  border: 2px solid red;
+  z-index: 4;
+  /*position: relative;*/
   /*display: inline-block;*/
 }
 
-#right-button {
-  margin-top: -50vh;
+.js-prev {
+  color: red;
+  /*margin-top: -50vh;*/
+  margin-left: 15vw;
 }
 
-#left-button {
-  margin-top: -50vh;
-  margin-left: 30vw;
+.js-next {
+  color: red;
+  /*margin-top: -50vh;*/
+  /*margin-right: 15vw;*/
+  /*margin-left: 30vw;*/
 }
 
 button:on-click
