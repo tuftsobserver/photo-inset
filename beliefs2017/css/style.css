@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0;
   padding: 0;
   font-family: "Special Elite", serif;
@@ -9,9 +9,6 @@ body {
   font-size: 16px;
 }
 
-h1 {
-  text-align: center;
-}
 
 h2,
 .pullquote,
@@ -25,13 +22,7 @@ h2,
 
 h1 {
   font-size: 3rem;
-}
-
-.pullquote {
-  margin: 2rem 0;
-  padding: 1rem 0;
-  border-top: solid .5rem;
-  border-bottom: solid .5rem;
+  text-align: center;
 }
 
 a {
@@ -43,14 +34,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.landing-page {
-  height: 100vh;
-  text-align: center;
-}
 
-.interactive-container {
-  height: 100vh;
-}
 
 article p {
   text-indent: 2rem;
@@ -72,53 +56,68 @@ article p {
   transform: translate(-50%, -50%);
 }
 
-.bounded-width {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem;
-}
 
 img {
-  height: 60vh;
+  /*height: 60vh;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 50vw;
+  max-height: 35vh;
+  opacity: 0.5;
 }
 
 .gallery {
-  width: 95vw;
+  /*width: 80vw;*/
   margin: 0 auto;
   text-align: center;
 }
 
 .main-image {
-  display: inline-block;
-  margin: 0 auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 1vh;
 }
 
 button {
   background-color: white;
   border: none;
   vertical-align: middle;
-  display: inline;
+  display: inline-block;
   align-items: center;
-  font-size: 40px;
-  opacity: 0.3;
-  border: 2px solid red;
+  outline: none;
   z-index: 4;
   /*position: relative;*/
   /*display: inline-block;*/
 }
 
+.btn:focus {
+  opacity: 1;
+  outline: none;
+}
+
+/*button:active {
+    box-shadow: none;;
+}*/
+
+.btn {
+  font-size: 40px;
+  opacity: 0.4;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  outline: none;
+
+}
+
 .js-prev {
-  color: red;
   /*margin-top: -50vh;*/
-  margin-left: 15vw;
 }
 
 .js-next {
-  color: red;
   /*margin-top: -50vh;*/
   /*margin-right: 15vw;*/
   /*margin-left: 30vw;*/
