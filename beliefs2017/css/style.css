@@ -63,14 +63,24 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 50vw;
-  max-height: 35vh;
+  max-height: 50vh;
+  opacity: 1;
+}
+
+#image1 {
+  opacity: 1;
+}
+
+#image2{
   opacity: 0.5;
 }
+
 
 .gallery {
   /*width: 80vw;*/
   margin: 0 auto;
   text-align: center;
+/*  opacity: 0.5;*/
 }
 
 .main-image {
@@ -114,13 +124,19 @@ button {
 }
 
 .js-prev {
-  /*margin-top: -50vh;*/
+
 }
 
 .js-next {
-  /*margin-top: -50vh;*/
-  /*margin-right: 15vw;*/
-  /*margin-left: 30vw;*/
+
+}
+
+#prev {
+  display: inline-block;
+}
+
+#next {
+  display: inline-block;
 }
 
 button:on-click
