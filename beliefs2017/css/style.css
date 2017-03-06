@@ -46,6 +46,7 @@ article p {
   font-size: 0.75rem;
   list-style-type: none;
   padding: 0;
+  margin-top: 5vh;
   text-align: center;
 }
 
@@ -56,9 +57,8 @@ article p {
   transform: translate(-50%, -50%);
 }
 
-
+/* Image styling */
 img {
-  /*height: 60vh;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -75,23 +75,20 @@ img {
   opacity: 0.5;
 }
 
-
 .gallery {
-  /*width: 80vw;*/
   margin: 0 auto;
   text-align: center;
-/*  opacity: 0.5;*/
 }
 
-.main-image {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
+/* Textbox styling */
 
-.buttons {
+#text {
+  margin-top: 35px;
   text-align: center;
-  margin-bottom: 1vh;
+  height: 45px;
 }
+
+/* Button Styling */
 
 button {
   background-color: white;
@@ -100,19 +97,13 @@ button {
   display: inline-block;
   align-items: center;
   outline: none;
-  z-index: 4;
-  /*position: relative;*/
-  /*display: inline-block;*/
+  
 }
 
 .btn:focus {
   opacity: 1;
   outline: none;
 }
-
-/*button:active {
-    box-shadow: none;;
-}*/
 
 .btn {
   font-size: 40px;
@@ -124,11 +115,13 @@ button {
 }
 
 .js-prev {
-
+  float: left;
+  right: 30px;
 }
 
 .js-next {
-
+  float: right;
+  left: 30px;
 }
 
 #prev {
@@ -139,4 +132,13 @@ button {
   display: inline-block;
 }
 
-button:on-click
+
+.buttons {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 1vh;
+}
+
+.buttons:on-click{
+  outline: none;
+}

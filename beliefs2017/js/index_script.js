@@ -27,11 +27,11 @@ document.querySelector('.js-prev').addEventListener('click', function() {
 	// Update arrows 
 	if (mySiema.currentSlide == 0){
 		document.getElementById('prev').innerHTML = '';
-	} else if (mySiema.currentSlide != 6) {
+	} else if (mySiema.currentSlide != 7) {
 		document.getElementById('next').innerHTML = '>';
 	}
 
-	updateText(mySiema.currentSlide);
+	document.getElementById('text').innerHTML = updateText(mySiema.currentSlide);
 
 	// opacity
 	if (mySiema.perPage > 2) {
@@ -44,7 +44,7 @@ document.querySelector('.js-next').addEventListener('click', function() {
 	console.log(mySiema.currentSlide);
 
 	// Update arrows
-	if (mySiema.currentSlide == 6){
+	if (mySiema.currentSlide == 7){
 		console.log('bye');
 		document.getElementById('next').innerHTML = '';
 	} else if (mySiema.currentSlide != 0) {
@@ -52,11 +52,7 @@ document.querySelector('.js-next').addEventListener('click', function() {
 		document.getElementById("prev").innerHTML = '<';
 	}
 
-	if (mySiema.currentSlide == 2){
-		document.getElementById('text').innerHTML = "Storms affirm that I am alive. <br /> Natural, emotional, interpersonal.";
-	}
-
-	console.log(mySiema.currentSlide);
+	document.getElementById('text').innerHTML = updateText(mySiema.currentSlide);
 
 	// opacity
 	if (mySiema.perPage > 2) {
@@ -69,12 +65,29 @@ document.querySelector('.js-next').addEventListener('click', function() {
 
 function updateText(index) {
  	if (index < 2) {
- 		document.getElementById('text').innerHTML = "";
+ 		return "";
  	}
- 	else if (index == 2){
-		document.getElementById('text').innerHTML = "Storms affirm that I am alive. <br /> Natural, emotional, interpersonal.";
+ 	else if (index == 1){
+		return "Storms affirm that I am alive.<br />Natural, emotional, interpersonal.";
 	}
-
+	else if (index == 2){
+		return "Summer.";
+	}
+	else if (index == 3){
+		return "It's sad that when people live here long enough, they get used to it.";
+	}
+	else if (index == 4){
+		return "I loved the way he looked at his double-neck guitar;<br />he cherised it more than the whole world he had.";
+	}
+	else if (index == 5){
+		return "I was filled with a calm gratitude - but also a hint<br />of shame, like towards someone you've spent fifteen<br />years with but know so little about their life.";
+	}
+	else if (index == 6){
+		return "This is a man I was in love with. I am no longer in<br />love, but I think I love him still.";
+	}
+	else {
+		return "";
+	}
 }
 
 // console.log(mySiema.currentSlide);
