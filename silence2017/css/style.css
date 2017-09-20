@@ -1,5 +1,13 @@
 
+.image {
+	width: 60vw;
+	padding-top: 15vh;
+	padding-left: 5vw;
+}
 
+img {
+	width: 100%;
+}
 
 .vertically-center {
   position: relative;
