@@ -16,8 +16,3 @@ $(document).ready(function() {
 	});
 });
 
-$('docume').scroll(function() {
-	$('h1').fadeOut( "slow", function() {
-
-	});
-});

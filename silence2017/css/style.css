@@ -1,6 +1,8 @@
 h1, h2, h3 {
   font-family: 'Anton';
 }
+
+
 body {
   background: white;
 }
@@ -8,10 +10,6 @@ body {
 	width: 60vw;
   height: 80vh;
   display: inline-block;
-  /*border: 5px solid red;  */*/
-
-  /*padding-top: 15vh;*/
-	/*padding-left: 5vw;*/
 }
 
 .image-right {
@@ -19,7 +17,6 @@ body {
   height: 80vh;
   display: inline-block;
   text-align: right;
-  /*border: 5px solid red;  */
 
 }
 
@@ -29,7 +26,6 @@ body {
   height: 80vh;
   display: block;
   text-align: center;
-  /*border: 5px solid red;*/
 }
 .vertical-image {
   width: 40vw;
@@ -56,14 +52,11 @@ h3 {
   text-align: center;
   display: inline-block;
   width: 29vw;
-  /*border: 5px red solid;*/*/
-  /*background-color: gray;*/
 }
 .caption-center {
   margin: auto;
   display: block;
   text-align: center;
-  /*border: 5px red solid;*/
 }
 .bottom {
   vertical-align: bottom;
@@ -90,7 +83,7 @@ h3 {
 .page {
   width: 90vw;
 }
-.vertically-center {
+.vertically-center, .vertically-center-credits {
   position: relative;
   top: 50%;
   left: 50%;
@@ -103,8 +96,6 @@ h3 {
 
 .landing-page {
   text-align: center;
-  font-size: 6vw;
-  /*font-size: 6rem;*/
   color: #736c7a;
 }
 
@@ -121,7 +112,6 @@ h3 {
 
 .parting-page {
   height: 100vh;
-  /*color: white;*/
   background: #1F1C2C;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #514b56, #aea8b5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #514b56, #aea8b5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -140,4 +130,50 @@ h3 {
 .link {
   font-size: 2vw;
   color: #454272;
+}
+
+.mobile {
+  float: left;
+}
+@media (max-width: 450px) {
+  .image-center, .image-left, .image-right, .vertically-center{
+      margin: 0 auto;
+      width: 100vw;
+  }
+
+  .vertically-center-credits {
+      width: 60vw;
+  }
+
+  .caption {
+    text-align: center;
+    width: 100vw;
+  }
+
+  .mobile {
+    float: none;
+  }
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 10vw;
+  }
+  .credits {
+    text-align: center;
+  }
+  li {
+    font-size: 5vw;
+  }
+  .link {
+    font-size: 6vw;
+  }
+
+  .fa-hand-o-left {
+    display: none;
+  }
 }
