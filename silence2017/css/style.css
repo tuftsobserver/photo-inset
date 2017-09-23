@@ -1,21 +1,112 @@
-
-.image {
+h1, h2, h3 {
+  font-family: 'Anton';
+}
+body {
+  background: white;
+}
+.image-left {
 	width: 60vw;
-	padding-top: 15vh;
-	padding-left: 5vw;
+  height: 80vh;
+  display: inline-block;
+  /*border: 5px solid red;  */*/
+
+  /*padding-top: 15vh;*/
+	/*padding-left: 5vw;*/
 }
 
+.image-right {
+  width: 60vw;
+  height: 80vh;
+  display: inline-block;
+  text-align: right;
+  /*border: 5px solid red;  */
+
+}
+
+.image-center {
+  margin: auto;
+  width: 60vw;
+  height: 80vh;
+  display: block;
+  text-align: center;
+  /*border: 5px solid red;*/
+}
+.vertical-image {
+  width: 40vw;
+
+}
 img {
-	width: 100%;
+  max-height: 100%;
+	max-width: 100%;
 }
 
+h1 {
+  font-size: 6vw;
+}
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+.caption {
+  
+  text-align: center;
+  display: inline-block;
+  width: 29vw;
+  /*border: 5px red solid;*/*/
+  /*background-color: gray;*/
+}
+.caption-center {
+  margin: auto;
+  display: block;
+  text-align: center;
+  /*border: 5px red solid;*/
+}
+.bottom {
+  vertical-align: bottom;
+  padding-bottom: 5vh;
+}
+
+.bottom-right {
+  vertical-align: bottom;
+  text-align: right;
+  padding-right: 5vw;
+  padding-bottom: 3vh;
+}
+
+.wide-caption {
+  width: 45vw;
+}
+.transient {
+
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+.page {
+  width: 90vw;
+}
 .vertically-center {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.arrow {
+  cursor: pointer;
+  color: #aea8b5;
+}
 
+.landing-page {
+  text-align: center;
+  font-size: 6vw;
+  /*font-size: 6rem;*/
+  color: #736c7a;
+}
 
 
 
@@ -23,21 +114,30 @@ img {
 /* Back to Observer Classes */
 .back-to-observer {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2vw;
   text-align: center;
+
 }
 
 .parting-page {
   height: 100vh;
-  background-size: cover;
-  background-image:url("../img/0.JPG");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  /*color: white;*/
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #514b56, #aea8b5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #514b56, #aea8b5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
 }
 
 .credits {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  color: white;
+}
+.link {
+  font-size: 2vw;
+  color: #454272;
 }
