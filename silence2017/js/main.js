@@ -1,8 +1,20 @@
-$(function() {
-	$.scrollify({
-		section: ".scroll",
-	});
+// Only enable scrollify if screen has sufficient landscape width
+// Scrollify too funky on mobile
+if ($(window).width() > $(window).height()) {
+    $.scrollify({
+        section: ".scroll"
+    });
+}
+
+// Handle scrollify changes based on screen dimensions
+$(window).resize(function() {
+    if ($(window).width() > $(window).height()) {
+        $.scrollify.enable();
+    } else {
+        $.scrollify.disable();
+    }
 });
+
 
 $('.arrow').click(function() {
 	$.scrollify.move('#2');
@@ -15,4 +27,3 @@ $(document).ready(function() {
 	    $('h1').fadeIn(1000);
 	});
 });
-
