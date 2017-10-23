@@ -1,0 +1,204 @@
+body, html {
+	background-color: #000;
+}
+
+h1 {
+	position: absolute;
+	margin-top: 16%;
+	margin-left: 43%;
+	color: white;
+	font-size: 4vw;
+	letter-spacing: 0.4vw;
+	font-family: 'Crafty Girls', cursive;
+}
+.title-frame {
+	margin-top: 4%;
+	margin-left: 30%;
+	width: 40vw;
+	height: 30vw;
+}
+
+.slide {
+	margin-top: 4%;
+	margin-left: 10%;
+	width: 40vw;
+	padding-bottom: 10vh;
+}
+
+.frame {
+	width: 40vw;
+}
+.frame-1 {
+	margin-top: 4%;
+	margin-left: 10%;
+	/*width: 40vw;*/
+}
+
+.picture {
+	position: absolute;
+	width: 25vw;
+	z-index: 1;
+}
+
+.pic-1 {
+	margin-top: 9%;
+	margin-left: 11%;
+}
+
+.pic-2 {
+	margin-top: 10%;
+	margin-left: 3%;
+}
+
+.frame-2 {
+	margin-top: 8%;
+	margin-left: -10%;
+}
+
+
+.frame-3 {
+	margin-top: 30%;
+	margin-left: -17%;
+}
+
+.pic-3 {
+	margin-top: 19%;
+}
+
+.flex-grid {
+	display: flex;
+}
+
+.frame-4 {
+	margin-top: 10%;
+	margin-left: 80%;
+}
+
+.pic-4 {
+	margin-top: 11.5%;
+	margin-left: 39%;
+}
+
+.pic-5 {
+	margin-top: 19%;
+	margin-left: 3%;
+}
+
+.frame-5 {
+	margin-top: 30%;
+	margin-left: -10%;
+}
+
+
+.frame-6 {
+	margin-top: 10%;
+	margin-left: -17%;
+}
+
+.pic-6 {
+	margin-top: 11%;
+}
+
+.credits {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.credits a {
+	color: white;
+}
+.back-to-observer {
+  font-weight: 900;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.vertically-center {
+	position: relative;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 500px) {
+	.title-frame, .frame {
+		width: 70vw;
+	}
+
+	.title-frame {
+		margin-top: 60%;
+		margin-left: 15%;
+	}
+
+	h1 {
+		margin-top: 70%;
+		margin-left: 38%;
+		font-size: 8vw;
+	}
+	.picture {
+		width: 43vw;
+	}
+
+	.frame-1 {
+		margin-top: 40%;
+	}
+
+	.pic-1 {
+		margin-top: 30%;
+		margin-left: 17%;
+	}
+
+	.flex-grid {
+		display: block;
+	}
+
+	.pic-2 {
+		margin-top: 16%;
+		margin-left: 8%;
+	}
+
+	.frame-3 {
+		margin-top: 0%;
+		margin-left: 30%;
+	}
+
+	.pic-3 {
+		margin-top: 14%;	
+		margin-left: 25%;
+	}
+
+	.frame-4 {
+		margin-left: 20%;
+	}
+	.pic-4 {
+		margin-left: 21%;
+		margin-top: 17%;
+	}
+
+	.pic-5 {
+		margin-top: 25%;
+		margin-left: 8%;
+	}
+
+	.frame-6 {
+		margin-left: 35%;
+	}
+
+	.pic-6 {
+		margin-top: 17%;
+		margin-left: 26%;
+	}
+
+	.credits {
+		padding-top: 20vh;
+		font-size: 1em;
+	}
+
+	.back-to-observer {
+		font-size: 1em;
+	}
+}
