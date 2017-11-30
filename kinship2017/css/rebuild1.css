@@ -88,4 +88,11 @@ body {
 	pointer-events: none;
 }
 
-
+.slide__title {
+	position: relative;
+	font-size: var(--fontsize-stitle);
+	margin: 0;
+	cursor: default;
+	line-height: 1;
+	color: var(--color-stitle);
+}
