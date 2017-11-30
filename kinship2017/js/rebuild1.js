@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
@@ -24,7 +24,7 @@
             if (callNow) func.apply(context, args);
         };
     };
-    
+
     class Slideshow {
         constructor(el) {
             this.DOM = {};
@@ -51,7 +51,7 @@
             this.DOM.nextCtrl = this.DOM.nav.querySelector('.slidenav__item--next');
             this.DOM.prevCtrl = this.DOM.nav.querySelector('.slidenav__item--prev');
             this.current = 0;
-            this.createFrame(); 
+            this.createFrame();
             this.initEvents();
         }
         createFrame() {
@@ -71,10 +71,10 @@
 
                 /* Change background frame color */
                 <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#70e1f5">
+                    <stop offset="0%" stop-color="#93c1c9">
                         <!--animate attributeName="stop-color" values="#ED4264; #FFEDBC; #ED4264" dur="3s" repeatCount="indefinite"></animate-->
                     </stop>
-                    <stop offset="100%" stop-color="#ffd194">
+                    <stop offset="100%" stop-color="#a9d064">
                         <!--animate attributeName="stop-color" values="#FFEDBC; #ED4264; #FFEDBC" dur="3s" repeatCount="indefinite"></animate-->
                     </stop>
                 </linearGradient>
@@ -106,12 +106,12 @@
         initEvents() {
             this.DOM.nextCtrl.addEventListener('click', () => this.navigate('next'));
             this.DOM.prevCtrl.addEventListener('click', () => this.navigate('prev'));
-            
+
             window.addEventListener('resize', debounce(() => {
                 this.rect = this.DOM.el.getBoundingClientRect();
                 this.updateFrame();
             }, 20));
-            
+
             document.addEventListener('keydown', (ev) => {
                 const keyCode = ev.keyCode || ev.which;
                 if ( keyCode === 37 ) {
@@ -129,7 +129,7 @@
             const animateShapeInTimeline = anime.timeline({
                 duration: this.settings.animation.shape.duration,
                 easing: this.settings.animation.shape.easing.in
-            });  
+            });
             animateShapeInTimeline
                 .add({
                     targets: this.DOM.shape,
@@ -164,11 +164,11 @@
                             resolve();
                         }
                     });
-        
-                    this.current = dir === 'next' ? 
+
+                    this.current = dir === 'next' ?
                         this.current < this.slidesTotal-1 ? this.current + 1 : 0 :
-                        this.current > 0 ? this.current - 1 : this.slidesTotal-1; 
-                    
+                        this.current > 0 ? this.current - 1 : this.slidesTotal-1;
+
                     const newSlide = this.DOM.slides[this.current];
                     newSlide.classList.add('slide--current');
                     anime({
@@ -177,7 +177,7 @@
                         easing: this.settings.animation.slides.easing,
                         translateX: [dir === 'next' ? this.rect.width : -1*this.rect.width,0]
                     });
-        
+
                     const newSlideImg = newSlide.querySelector('.slide__img');
                     anime.remove(newSlideImg);
                     anime({
@@ -199,11 +199,11 @@
                 });
             };
 
-            const animateShapeOut = () => {  
+            const animateShapeOut = () => {
                 const animateShapeOutTimeline = anime.timeline({
                     duration: this.settings.animation.shape.duration,
                     easing: this.settings.animation.shape.easing.out
-                });  
+                });
                 animateShapeOutTimeline
                     .add({
                         targets: this.DOM.shape,
