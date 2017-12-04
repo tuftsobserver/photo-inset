@@ -10,6 +10,7 @@
  */
 {
 
+
     function changeSources() {
       var w = window.innerWidth;
       var h = window.innerHeight;
@@ -269,4 +270,17 @@
 
     new Slideshow(document.querySelector('.slideshow'));
     imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
+
+
+    $('.title').textition({
+        speed: 1,
+        handler: 'onload',
+        animation: 'ease-in',
+        map: {x: 200, y: 100, z: 0},
+        autoplay: true,
+        interval: 2.5
+    });
+
+    
 };
+
