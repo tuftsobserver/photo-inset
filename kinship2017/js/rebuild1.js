@@ -9,6 +9,42 @@
  * http://www.codrops.com
  */
 {
+
+    function changeSources() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      if (w > h) {
+        var images = document.getElementsByClassName("responsive");
+        for (i = 0; i < images.length; i++) {
+          imgNum = i + 1
+          images[i].style.backgroundImage = "url('img/horiz/" + imgNum + ".jpg')";
+        }
+
+        var hidden = document.getElementsByClassName('half-only');
+        for (i = 0; i < hidden.length; i++) {
+          hidden[i].style.display = 'flex';
+          hidden[i].classList.add("slide");
+        }
+
+      } else if (w < h) {
+        var images = document.getElementsByClassName("responsive");
+        for (i = 0; i < images.length; i++) {
+          imgNum = i + 1
+          images[i].style.backgroundImage = "url('img/vert/" + imgNum + ".jpg')";
+        }
+
+        var hidden = document.getElementsByClassName('half-only');
+        for (i = 0; i < hidden.length; i++) {
+          hidden[i].style.display = 'none';
+          hidden[i].classList.remove("slide");
+        }
+      }
+    }
+
+    changeSources();
+    window.onresize = changeSources;
+
+
     // From https://davidwalsh.name/javascript-debounce-function.
     function debounce(func, wait, immediate) {
         var timeout;

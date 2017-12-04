@@ -117,3 +117,17 @@ body {
 	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
 	transform: rotate(180deg);
 }
+
+.closing-credits {
+	background-color: black;
+	color: white;
+}
+
+li {
+	line-height: 1.5
+}
+
+a, .italics {
+	color: inherit;
+	font-style:italic;
+}
